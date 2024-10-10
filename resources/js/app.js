@@ -6,8 +6,10 @@ import { createInertiaApp } from '@inertiajs/vue3';
 
 createInertiaApp({
     resolve: name => import(`./Pages/${name}.vue`), // Usando import dinâmico
-    setup({ el, App, props }) {
-        createApp({ render: () => h(App, props) }).mount(el);
+    setup({ el, App, props, plugin }) {
+        createApp({ render: () => h(App, props) })
+        .use(plugin)
+        .mount(el);
     },
 });
 
