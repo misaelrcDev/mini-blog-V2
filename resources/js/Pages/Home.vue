@@ -1,5 +1,6 @@
 <script setup>
     import BlogLayout from "../Layouts/BlogLayout.vue";
+    import { Link } from "@inertiajs/vue3";
 
     defineProps({
     articles: Object,
@@ -18,7 +19,7 @@
       >
 
          <img
-            src="/images/kinsta-logo.png"
+            src="https://via.placeholder.com/72"
             class="w-32 h-32 rounded-xl object-cover"
             alt=""
          />
@@ -27,16 +28,18 @@
           <h3
             class="text-xl font-semibold text-indigo-600 hover:text-indigo-800"
           >
-            <a href="#">{{ article.title }}</a>
+          <Link :href="route('article.show', article.id)">
+            {{ article.title }}
+            </Link>
           </h3>
           <p>
            {{ article.excerpt }}
           </p>
-          <a
-            href="#"
-            class="text-indigo-600 hover:text-indigo-800 w-fit self-end font-semibold"
-            >Read more</a
-          >
+            <Link
+                :href="'/posts/' + article.id"
+                class="text-indigo-600 hover:text-indigo-800 w-fit self-end font-semibold"
+                >Read more
+            </Link>
         </div>
       </article>
     </section>

@@ -11,8 +11,8 @@ class ComposerStaticInit8c804e4a8c3c1ea0e6dd61980c279cdd
         '6e3fae29631ef280660b3cdad06f25a8' => __DIR__ . '/..' . '/symfony/deprecation-contracts/function.php',
         'e69f7f6ee287b969198c3c9d6777bd38' => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer/bootstrap.php',
         '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
-        '8825ede83f2f289127722d4e842cf7e8' => __DIR__ . '/..' . '/symfony/polyfill-intl-grapheme/bootstrap.php',
         '662a729f963d39afe703c9d9b7ab4a8c' => __DIR__ . '/..' . '/symfony/polyfill-php83/bootstrap.php',
+        '8825ede83f2f289127722d4e842cf7e8' => __DIR__ . '/..' . '/symfony/polyfill-intl-grapheme/bootstrap.php',
         'b6b991a57620e2fb6b2f66f03fe9ddc2' => __DIR__ . '/..' . '/symfony/string/Resources/functions.php',
         'f598d06aa772fa33d905e87be6398fb1' => __DIR__ . '/..' . '/symfony/polyfill-intl-idn/bootstrap.php',
         '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
@@ -54,6 +54,7 @@ class ComposerStaticInit8c804e4a8c3c1ea0e6dd61980c279cdd
         'T' => 
         array (
             'TijsVerkoyen\\CssToInlineStyles\\' => 31,
+            'Tighten\\Ziggy\\' => 14,
             'Tests\\' => 6,
             'Termwind\\' => 9,
         ),
@@ -192,6 +193,10 @@ class ComposerStaticInit8c804e4a8c3c1ea0e6dd61980c279cdd
         'TijsVerkoyen\\CssToInlineStyles\\' => 
         array (
             0 => __DIR__ . '/..' . '/tijsverkoyen/css-to-inline-styles/src',
+        ),
+        'Tighten\\Ziggy\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/tightenco/ziggy/src',
         ),
         'Tests\\' => 
         array (
@@ -511,6 +516,8 @@ class ComposerStaticInit8c804e4a8c3c1ea0e6dd61980c279cdd
 
     public static $classMap = array (
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
+        'App\\Http\\Middleware\\HandleInertiaRequests' => __DIR__ . '/../..' . '/app/Http/Middleware/HandleInertiaRequests.php',
+        'App\\Models\\Article' => __DIR__ . '/../..' . '/app/Models/Article.php',
         'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
@@ -630,6 +637,7 @@ class ComposerStaticInit8c804e4a8c3c1ea0e6dd61980c279cdd
         'Cron\\HoursField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/HoursField.php',
         'Cron\\MinutesField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/MinutesField.php',
         'Cron\\MonthField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/MonthField.php',
+        'Database\\Factories\\ArticleFactory' => __DIR__ . '/../..' . '/database/factories/ArticleFactory.php',
         'Database\\Factories\\UserFactory' => __DIR__ . '/../..' . '/database/factories/UserFactory.php',
         'Database\\Seeders\\DatabaseSeeder' => __DIR__ . '/../..' . '/database/seeders/DatabaseSeeder.php',
         'DateError' => __DIR__ . '/..' . '/symfony/polyfill-php83/Resources/stubs/DateError.php',
@@ -6448,6 +6456,14 @@ class ComposerStaticInit8c804e4a8c3c1ea0e6dd61980c279cdd
         'TheSeer\\Tokenizer\\TokenCollectionException' => __DIR__ . '/..' . '/theseer/tokenizer/src/TokenCollectionException.php',
         'TheSeer\\Tokenizer\\Tokenizer' => __DIR__ . '/..' . '/theseer/tokenizer/src/Tokenizer.php',
         'TheSeer\\Tokenizer\\XMLSerializer' => __DIR__ . '/..' . '/theseer/tokenizer/src/XMLSerializer.php',
+        'Tighten\\Ziggy\\BladeRouteGenerator' => __DIR__ . '/..' . '/tightenco/ziggy/src/BladeRouteGenerator.php',
+        'Tighten\\Ziggy\\CommandRouteGenerator' => __DIR__ . '/..' . '/tightenco/ziggy/src/CommandRouteGenerator.php',
+        'Tighten\\Ziggy\\Output\\File' => __DIR__ . '/..' . '/tightenco/ziggy/src/Output/File.php',
+        'Tighten\\Ziggy\\Output\\MergeScript' => __DIR__ . '/..' . '/tightenco/ziggy/src/Output/MergeScript.php',
+        'Tighten\\Ziggy\\Output\\Script' => __DIR__ . '/..' . '/tightenco/ziggy/src/Output/Script.php',
+        'Tighten\\Ziggy\\Output\\Types' => __DIR__ . '/..' . '/tightenco/ziggy/src/Output/Types.php',
+        'Tighten\\Ziggy\\Ziggy' => __DIR__ . '/..' . '/tightenco/ziggy/src/Ziggy.php',
+        'Tighten\\Ziggy\\ZiggyServiceProvider' => __DIR__ . '/..' . '/tightenco/ziggy/src/ZiggyServiceProvider.php',
         'TijsVerkoyen\\CssToInlineStyles\\CssToInlineStyles' => __DIR__ . '/..' . '/tijsverkoyen/css-to-inline-styles/src/CssToInlineStyles.php',
         'TijsVerkoyen\\CssToInlineStyles\\Css\\Processor' => __DIR__ . '/..' . '/tijsverkoyen/css-to-inline-styles/src/Css/Processor.php',
         'TijsVerkoyen\\CssToInlineStyles\\Css\\Property\\Processor' => __DIR__ . '/..' . '/tijsverkoyen/css-to-inline-styles/src/Css/Property/Processor.php',
